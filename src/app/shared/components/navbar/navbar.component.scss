@@ -1,0 +1,18 @@
+@import "../../../../assets/scss/settings";
+
+.navbar {
+  @extend %fce;
+}
+
+.list {
+  @extend %fcs;
+  display: inline-flex;
+  font: 700 #{rem-calc(22)}/1.2 $base-font-family;
+  li {
+    &:not(:last-of-type) {
+      margin-right: rem-calc($default-size);
+    }
+  }
+}
+
+

@@ -1,0 +1,257 @@
+// list reset
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// clearfix
+%clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+/// * Helper class to truncate and add ellipsis to a string too long for it to fit
+/// * on a single line.
+/// * 1. Prevent content from wrapping, forcing it on a single line.
+/// * 2. Add ellipsis at the end of the line.
+
+%ellipsis {
+  overflow: hidden;
+  white-space: nowrap; /* 1 */
+  text-overflow: ellipsis; /* 2 */
+}
+
+%outlinefix {
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+// padding / margin 0
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+// flex align (display, align-items, justify-content)
+
+@mixin fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%fcc {
+  @include fcc;
+}
+
+@mixin fcs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+%fcs {
+  @include fcs;
+}
+
+@mixin fce {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+%fce {
+  @include fce;
+}
+
+@mixin fcsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+%fcsb {
+  @include fcsb;
+}
+
+@mixin fcsa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+%fcsa {
+  @include fcsa;
+}
+
+@mixin fbc {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+%fbc {
+  @include fbc;
+}
+
+@mixin fbs {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+%fbs {
+  @include fbs;
+}
+
+@mixin fbe {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+%fbe {
+  @include fbe;
+}
+
+@mixin fbsb {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+%fbsb {
+  @include fbsb;
+}
+
+@mixin fbsa {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+%fbsa {
+  @include fbsa;
+}
+
+@mixin fss {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+%fss {
+  @include fss;
+}
+
+@mixin fsc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+%fsc {
+  @include fsc;
+}
+
+@mixin fse {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+%fse {
+  @include fse;
+}
+
+@mixin fssb {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+%fssb {
+  @include fssb;
+}
+
+%fes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+@mixin fee {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+%fee {
+  @include fee;
+}
+
+@mixin fec {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+%fec {
+  @include fec;
+}
+
+@mixin fes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+%fes {
+  @include fes;
+}
+
+@mixin fesb {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+%fesb {
+  @include fesb;
+}
+
+@mixin fstrs {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+%fstrs {
+  @include fstrs;
+}
+
+@mixin fstrc {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+%fstrc {
+  @include fstrc;
+}
+
+@mixin fstrsb {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+%fstrsb {
+  @include fstrsb;
+}

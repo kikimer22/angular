@@ -1,0 +1,25 @@
+@import "../../../../assets/scss/settings";
+
+footer {
+  background-color: rgba(#000, .2);
+}
+
+.content-container {
+  @extend %fcs;
+}
+
+.img-holder {
+  @extend %fcc;
+  flex-shrink: 0;
+  padding: rem-calc($default-size / 2);
+  margin-right: rem-calc($default-size);
+}
+
+.logo {
+  width: rem-calc(68);
+}
+
+app-navbar {
+  display: block;
+  flex: auto;
+}

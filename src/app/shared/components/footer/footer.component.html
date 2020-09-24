@@ -1,0 +1,16 @@
+<footer>
+  <div class="container content-container">
+    <a [routerLink]="'/'" class="img-holder">
+      <img
+        class="logo"
+        [offset]="200"
+        [defaultImage]="'../../../assets/images/1x1.gif'"
+        [lazyLoad]="'../../../assets/images/logo.svg'"
+        [errorImage]="'../../../assets/images/1x1.gif'"
+        [alt]="'logo'"
+      />
+    </a>
+
+    <app-navbar></app-navbar>
+  </div>
+</footer>

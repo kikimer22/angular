@@ -1,0 +1,12 @@
+@import "../../../../assets/scss/settings";
+
+:host-context(app-main-layout) {
+  display: flex;
+  flex-flow: column;
+  min-height: 100%;
+}
+
+main {
+  flex: auto;
+  padding: rem-calc($default-size 0);
+}
