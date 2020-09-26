@@ -1,0 +1,28 @@
+@import "../../../assets/scss/settings";
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: rem-calc($default-size);
+  background-color: rgba(#000, .4);
+}
+
+.form-control {
+  @extend %fsc;
+  flex-flow: column;
+  label, input {
+    display: block;
+  }
+  input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #000000;
+    transition: border-bottom-color;
+    &:focus {
+      border-color: #ffffff;
+    }
+  }
+}

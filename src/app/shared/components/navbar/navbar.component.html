@@ -2,12 +2,18 @@
   <ul class="list">
     <li>
       <a [routerLink]="'/'">
-        <span>home</span>
+        <span>Главная</span>
       </a>
     </li>
     <li>
       <a [routerLink]="'/faq'">
-        <span>faq</span>
+        <span>Часто задаваемые вопросы</span>
+      </a>
+    </li>
+    <li *ngIf="auth.isAuthenticated()">
+      <a [routerLink]="'/admin/login'"
+         (click)="auth.logout()">
+        <span>Выйти</span>
       </a>
     </li>
   </ul>

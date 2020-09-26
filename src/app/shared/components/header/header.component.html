@@ -11,7 +11,7 @@
       />
     </a>
 
-<!--    <h1 *ngIf="isAdmin">Админ</h1>-->
+    <h1 *ngIf="auth.isAuthenticated()">Админ</h1>
 
     <app-navbar></app-navbar>
   </div>
