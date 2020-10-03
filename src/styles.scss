@@ -2,6 +2,8 @@
 @import "assets/scss/helpers/reset";
 @import "assets/scss/vendors/normalize";
 @import "assets/scss/settings";
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
 
 .container {
   max-width: 1100px;

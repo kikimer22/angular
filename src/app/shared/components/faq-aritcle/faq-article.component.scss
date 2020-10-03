@@ -1,0 +1,21 @@
+@import "../../../../assets/scss/settings";
+
+article {
+  .title-holder {
+    margin-bottom: rem-calc($default-size * 1.5);
+    font: 500 #{rem-calc(24)}/1.2 $base-font-family;
+    color: rgba(#ffffff, .8);
+  }
+  .ttl {
+    margin-bottom: 0;
+    font: inherit;
+  }
+  .text-container {
+    & > * {
+      color: rgba(#ffffff, .6);
+      &:not(:last-child) {
+        margin-bottom: rem-calc($default-size);
+      }
+    }
+  }
+}

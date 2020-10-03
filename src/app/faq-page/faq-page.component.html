@@ -1,40 +1,8 @@
 <div class="container">
   <div class="ttl-holder">
-    <h2 class="ttl">FAQ</h2>
+    <h2 class="ttl">Часто задаваемые вопросы</h2>
   </div>
   <div class="content-container">
-    <article>
-      <h3 class="ttl">Lorem ipsum dolor sit amet.</h3>
-      <div class="text-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eum in maiores maxime minus, molestias
-          perspiciatis quam quas totam veniam!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eum in maiores maxime minus, molestias
-          perspiciatis quam quas totam veniam!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut explicabo illum iste tempore. Assumenda cumque
-          cupiditate dolorum, earum eligendi eos expedita fugit laborum magni modi nam perspiciatis quas ratione rem.</p>
-      </div>
-    </article>
-    <article>
-      <h3 class="ttl">Lorem ipsum dolor sit amet.</h3>
-      <div class="text-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eum in maiores maxime minus, molestias
-          perspiciatis quam quas totam veniam!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eum in maiores maxime minus, molestias
-          perspiciatis quam quas totam veniam!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut explicabo illum iste tempore. Assumenda cumque
-          cupiditate dolorum, earum eligendi eos expedita fugit laborum magni modi nam perspiciatis quas ratione rem.</p>
-      </div>
-    </article>
-    <article>
-      <h3 class="ttl">Lorem ipsum dolor sit amet.</h3>
-      <div class="text-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eum in maiores maxime minus, molestias
-          perspiciatis quam quas totam veniam!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eum in maiores maxime minus, molestias
-          perspiciatis quam quas totam veniam!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut explicabo illum iste tempore. Assumenda cumque
-          cupiditate dolorum, earum eligendi eos expedita fugit laborum magni modi nam perspiciatis quas ratione rem.</p>
-      </div>
-    </article>
+    <app-faq-article *ngFor="let article of faq" [article]="article"></app-faq-article>
   </div>
 </div>

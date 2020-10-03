@@ -1,27 +1,10 @@
 @import "../../assets/scss/settings";
 
-.content-container {
-  article {
-    &:not(:last-of-type) {
-      margin-bottom: rem-calc($default-size);
-    }
-  }
-}
-
-article {
+app-faq-article {
+  display: block;
   padding: rem-calc(40 60);
   background-color: rgba(#000000, .4);
-  .ttl {
-    margin-bottom: rem-calc($default-size * 1.5);
-    font: 500 #{rem-calc(24)}/1.2 $base-font-family;
-    color: rgba(#ffffff, .8);
-  }
-  .text-container {
-    & > * {
-      color: rgba(#ffffff, .6);
-      &:not(:last-child) {
-        margin-bottom: rem-calc($default-size);
-      }
-    }
+  &:not(:last-of-type) {
+    margin-bottom: rem-calc($default-size);
   }
 }

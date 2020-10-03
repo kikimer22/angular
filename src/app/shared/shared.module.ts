@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { QuillModule } from 'ngx-quill';
+import { FaqArticleComponent } from './components/faq-aritcle/faq-article.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { QuillModule } from 'ngx-quill';
     HomePageComponent,
     FaqPageComponent,
     FooterComponent,
+    FaqArticleComponent
   ],
   imports: [
     CommonModule,
@@ -24,6 +27,7 @@ import { QuillModule } from 'ngx-quill';
     LazyLoadImageModule,
     HttpClientModule,
     QuillModule.forRoot(),
+    ReactiveFormsModule,
   ],
   exports: [
     CommonModule,
@@ -36,6 +40,7 @@ import { QuillModule } from 'ngx-quill';
     FooterComponent,
     HttpClientModule,
     QuillModule,
+    FaqArticleComponent
   ]
 })
 export class SharedModule {

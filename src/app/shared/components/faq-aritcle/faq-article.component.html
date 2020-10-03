@@ -1,0 +1,34 @@
+<article>
+
+  <ng-container *ngIf="isAuth(); else noAuth">
+
+    <form *ngIf="editable; else noEditable" class="form" [formGroup]="form" (ngSubmit)="submit()">
+      <div class="form-control title-holder">
+        <quill-editor formControlName="title"></quill-editor>
+      </div>
+      <div class="form-control text-container">
+        <quill-editor formControlName="text"></quill-editor>
+      </div>
+      <button type="submit" class="btn btn-primary">Изменить данные</button>
+    </form>
+
+    <ng-template #noEditable>
+      <div class="title-holder" [innerHTML]="article.title"></div>
+      <div class="text-container" [innerHTML]="article.text"></div>
+    </ng-template>
+
+    <button type="button" (click)="toggleEditState()"><span>Переключиться на редактирование данные этого блока</span>
+    </button>
+
+  </ng-container>
+
+  <ng-template #noAuth>
+    <div class="title-holder">
+      {{article.title}}
+    </div>
+    <div class="text-container">
+      {{article.text}}
+    </div>
+  </ng-template>
+
+</article>
